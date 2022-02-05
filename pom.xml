@@ -37,6 +37,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -45,6 +46,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+                        <groupId>org.jenkins-ci.plugins</groupId>
+                        <artifactId>terraform</artifactId>
+                        <version>1.0.11</version>
+                        </plugin>
 			<!--                   Jacoco Plugin                   -->
 <plugin>
    <groupId>org.jacoco</groupId>
@@ -65,7 +71,7 @@
       </execution>
    </executions>
 </plugin>
-			<!--                   PITest Mutation Plugin                   -->
+			<!--                   PITest Mutation Plugin    demo            -->
 <plugin>
    <groupId>org.pitest</groupId>
    <artifactId>pitest-maven</artifactId>
